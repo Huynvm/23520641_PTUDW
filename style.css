@@ -1,0 +1,165 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container */
+.introduction, .contact {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    color: #34495e;
+}
+
+h2 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+h3, h4 {
+    margin-top: 15px;
+    color: #555;
+}
+
+/* Image */
+.introduction .image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction img {
+    border-radius: 50%;
+    border: 4px solid #3498db;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.introduction img:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+/* Table mục tiêu */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(90deg, #3498db, #9b59b6);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+tr:hover {
+    background-color: #dfe6e9;
+}
+
+/* Form liên hệ */
+.contact h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 15px;
+}
+
+input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus, select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+    outline: none;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 5px;
+    accent-color: #3498db;
+}
+
+/* Button */
+button {
+    background: linear-gradient(to right, #3498db, #9b59b6);
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+.contact p:last-child {
+    text-align: right;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .introduction, .contact {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="introduction">
+        <h1>Giới thiệu bản thân</h1>
+        <div class="image">
+        <img src="frame_image.png" alt="" width="200" height="200">
+        </div>
+        <h2>Thông tin cơ bản</h2>
+        <ul>
+            <li>Tên: Nguyễn Văn Mạnh Huy</li>
+            <li>Năm sinh: 2005</li>
+            <li>Chuyên ngành: Hệ thống thông tin</li>
+        </ul>
+        <h2>Sở thích</h2>
+        <ul>
+            <li>Đá bóng</li>
+            <li>Xem phim</li>
+        </ul>
+        <h3>Món ăn</h3>
+        <ol type = "1">
+            <li>Gà rán</li>
+            <li>Dưa hấu</li>
+            <li>Cơm mẹ nấu</li>
+        </ol>
+        <h3>Giải trí</h3>
+        <ul>
+            <li>Youtube</li>
+            <li>Rophim</li>
+        </ul>
+        <h4>Trò chơi</h4>
+        <ul>
+            <li>Liên quân mobile</li>
+            <li>Đấu trường chân lý - TFT</li>
+            <li>Valorant</li>
+        </ul>
+        <h4>Bài hát yêu thích</h4>
+        <ul>
+            <li>Nơi này có anh - Sơn Tùng MTP</li>
+            <li>Lạc trôi - Sơn Tùng MTP</li>
+        </ul>
+        <h2>Mục tiêu của bản thân</h2>
+        <table>
+            <tr>
+                <th>Mục tiêu</th>
+                <th>Thời hạn</th>
+                <th>Hoàn thành</th>
+            </tr>
+            <tr>
+                <td>Đạt chứng chỉ ngoại ngữ đủ chuẩn tốt nghiệp</td>
+                <td>01/07/2025</td>
+                <td><input id="target" type="checkbox" checked></td> 
+            </tr>
+            <tr>
+                <td>Tốt nghiệp đúng hạn</td>
+                <td>01/07/2027</td>
+                <td><input id="target" type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>Tìm được công việc phù hợp với bản thân</td>
+                <td>**/**/2026</td>
+                <td><input id="target" type="checkbox"></td>
+            </tr>
+        </table>
+    </div>
+    <form class="contact">
+        <h1>Gửi thông tin và giao lưu cùng tôi</h1>
+        <p>Họ và tên: <input type="text" name="name"></p>
+        <p>Email: <input type="text" name="email"></p>
+        <p>Tin nhắn:</p>
+        <p><textarea name="message" rows="5" cols="50"></textarea></p>
+        <p>Giới tính:</p>
+        <p>
+            <input type="radio" name="gender" id="male" value="male" checked>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Nữ</label>
+        </p>
+        <p>Sở thích:</p>
+        <p>
+            <input type="checkbox" name="hobbies" id="music" value="music">
+            <label for="music">Nghe nhạc</label>
+            <input type="checkbox" name="hobbies" id="soccer" value="soccer">
+            <label for="soccer">Đá bóng</label>
+            <input type="checkbox" name="hobbies" id="film" value="film">
+            <label for="film">Xem phim</label>
+            <input type="checkbox" name="hobbies" id="dif" value="dif">
+            <label for="dif">Khác: <input type="text"></label>
+        </p>
+        <p>Ngành:
+            <select name="major">
+                <option value="khmt">Khoa học máy tính</option>
+                <option value="ttnt">Trí tuệ nhân tạo</option>
+                <option value="mmt">Mạng máy tính và truyền thông dữ liệu</option>
+                <option value="ktpm">Kỹ thuật phần mềm</option>
+                <option value="httt">Hệ thống thông tin</option>
+                <option value="httt_tt">Hệ thống thông tin (tiên tiến)</option>
+                <option value="tmdt">Thương mại điện tử</option>
+                <option value="cntt">Công nghệ thông tin</option>
+                <option value="cnttvn">Công nghệ thông tin Việt Nhật</option>
+                <option value="khdl">Khoa học dữ liệu</option>
+                <option value="attn">An toàn thông tin</option>
+                <option value="ktmt">Kỹ thuật máy tính</option>
+                <option value="tkvm">Thiết kế vi mạch</option>
+                <option value="dpt">Truyền thông đa phương tiện</option>
+
+            </select>
+        </p>
+        <p>
+            <button type="submit">Gửi</button>
+        </p>
+    </form>
+</body>
+</html>
